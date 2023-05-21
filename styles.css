@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #f2f2f2;
   margin: 1rem 0;
 }
@@ -61,4 +61,33 @@ h2 {
 .skill img {
   width: 50px;
   height: 50px;
+}
+
+.link-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.link-gallery p {
+  color: #aaaaaa;
+}
+
+.link-gallery a {
+  color: #f2f2f2;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  width: fit-content;
+  justify-self: right;
+}
+
+.link-gallery a:hover {
+  color: #aaaaaa;
+}
+
+.link-gallery svg {
+  width: 15px;
+  height: 15px;
+  margin-left: 0.5rem;
 }
