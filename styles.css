@@ -18,6 +18,7 @@ main {
   gap: 1rem;
   justify-content: center;
   min-height: 100vh;
+  margin-left: 33%;
 }
 
 section {
