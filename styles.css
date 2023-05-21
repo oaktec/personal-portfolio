@@ -31,14 +31,13 @@ section {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #f2f2f2;
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.8rem;
   color: #f2f2f2;
   margin: 1rem 0;
 }
@@ -48,6 +47,7 @@ h2 {
   grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
   gap: 1rem;
   justify-items: center;
+  margin-left: 1rem;
 }
 
 .skill {
@@ -55,6 +55,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .skill img {
