@@ -127,7 +127,6 @@ section#projects {
   color: #aaaaaa;
 }
 .project h3 {
-  display: inline;
   font-size: 1.5rem;
   color: #f2f2f2;
 }
@@ -137,6 +136,18 @@ section#projects {
   border-radius: 8px;
 
   transition: height 0.3s ease, width 0.3s ease;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-self: start;
+}
+
+.project-title img {
+  width: 30px;
+  height: 30px;
 }
 
 .project p {
