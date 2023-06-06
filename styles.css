@@ -128,10 +128,13 @@ section#projects {
 }
 .project h3 {
   display: inline;
+  font-size: 1.5rem;
+  color: #f2f2f2;
 }
 
 .project img {
   width: 100%;
+  border-radius: 8px;
 
   transition: height 0.3s ease, width 0.3s ease;
 }
@@ -147,12 +150,11 @@ section#projects {
 .project.open h3::before {
   content: "v";
 }
-
+/* 
 .project.open img {
   height: 100%;
   width: 100%;
-  border-radius: 8px;
-}
+} */
 
 .project.open p,
 .project.open img {
