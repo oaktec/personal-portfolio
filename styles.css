@@ -98,8 +98,8 @@ section#projects {
   grid-template-rows: auto 1fr auto;
   justify-items: center;
   max-width: 50%;
-  gap: 0.5rem;
-  padding: 0.5rem;
+  gap: 1rem;
+  padding: 1rem;
   border-radius: 8px;
 
   background-color: #1f1f1f;
@@ -141,7 +141,7 @@ section#projects {
 }
 
 .project.open {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .project.open h3::before {
