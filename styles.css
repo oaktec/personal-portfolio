@@ -104,6 +104,11 @@ section#projects {
 
   background-color: #1f1f1f;
   border: 1px solid #aaaaaa;
+  cursor: pointer;
+}
+
+.project:hover {
+  border: 1px solid #f2f2f2;
 }
 
 .project h3::before {
@@ -113,12 +118,11 @@ section#projects {
 }
 .project h3 {
   display: inline;
-  cursor: pointer;
 }
 
 .project img {
-  height: 0;
-  width: 0;
+  height: 0px;
+  width: 0px;
 }
 
 .project p,
@@ -128,6 +132,10 @@ section#projects {
 
 .project.open {
   max-width: 90%;
+}
+
+.project.open h3::before {
+  content: "v";
 }
 
 .project.open img {
