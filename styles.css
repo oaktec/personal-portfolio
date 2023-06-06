@@ -82,6 +82,65 @@ h2 {
   height: 50px;
 }
 
+section#projects {
+  max-width: 100%;
+}
+
+.project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+
+  background-color: #1f1f1f;
+  border: 1px solid #aaaaaa;
+}
+
+.project h3::before {
+  content: ">";
+  margin-right: 0.5rem;
+  color: #aaaaaa;
+}
+.project h3 {
+  display: inline;
+  cursor: pointer;
+}
+
+.project img {
+  height: 0;
+  width: 0;
+}
+
+.project p,
+.project img {
+  display: none;
+}
+
+.project.open {
+  max-width: 90%;
+}
+
+.project.open img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project.open p,
+.project.open img {
+  display: block;
+}
+
 .link-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
