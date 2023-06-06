@@ -1,6 +1,5 @@
-const projectGallery = document.querySelector(".projects-gallery");
+const projectGallery = document.querySelector(".project-gallery");
 
-// for each child of projectGallery (each project) add an event listener
 for (const child of projectGallery.children) {
   child.addEventListener("click", () => {
     if (child.classList.contains("open")) {
@@ -15,5 +14,14 @@ for (const child of projectGallery.children) {
     }
     // add active class to the clicked project
     child.classList.add("open");
+  });
+
+  // Get the links within the child and stop event propagation when clicked
+  const links = child.querySelectorAll(".project-links a");
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
   });
 }

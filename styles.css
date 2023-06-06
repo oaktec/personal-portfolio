@@ -94,9 +94,9 @@ section#projects {
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
   max-width: 50%;
   gap: 0.5rem;
   padding: 0.5rem;
@@ -105,10 +105,20 @@ section#projects {
   background-color: #1f1f1f;
   border: 1px solid #aaaaaa;
   cursor: pointer;
+
+  transition: all 0.3s ease;
 }
 
 .project:hover {
   border: 1px solid #f2f2f2;
+  transform: scale(1.01);
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .project h3::before {
@@ -121,12 +131,12 @@ section#projects {
 }
 
 .project img {
-  height: 0px;
-  width: 0px;
+  width: 100%;
+
+  transition: height 0.3s ease, width 0.3s ease;
 }
 
-.project p,
-.project img {
+.project p {
   display: none;
 }
 
@@ -160,7 +170,7 @@ section#projects {
   color: #aaaaaa;
 }
 
-.link-gallery a {
+a {
   color: #f2f2f2;
   text-decoration: none;
   border-bottom: 1px dotted;
@@ -168,11 +178,11 @@ section#projects {
   justify-self: right;
 }
 
-.link-gallery a:hover {
+a:hover {
   color: #aaaaaa;
 }
 
-.link-gallery svg {
+svg {
   width: 15px;
   height: 15px;
   margin-left: 0.5rem;
