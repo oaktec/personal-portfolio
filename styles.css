@@ -140,14 +140,14 @@ section#projects {
 
 .project-title {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.5rem;
   justify-self: start;
 }
 
-.project-title img {
-  width: 30px;
-  height: 30px;
+.project-title span {
+  font-size: 0.9rem;
+  color: #aaaaaa;
 }
 
 .project p {
