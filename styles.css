@@ -234,6 +234,10 @@ svg {
     max-width: 100%;
   }
 
+  .project:hover {
+    transform: none;
+  }
+
   .project-title span {
     display: block;
   }
